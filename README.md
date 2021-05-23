@@ -29,7 +29,7 @@ target 'SyncGithooksDemo' do
 end
 ```
 
-1. Add pods of git hooks under `Githooks` abstract_target.
+2. Add pods of git hooks under `Githooks` abstract_target.
 ```ruby
 abstract_target 'Githooks' do
   pod 'githooksA', git: 'https://github.com/dirtmelon/githooksA.git'
@@ -37,7 +37,7 @@ abstract_target 'Githooks' do
 end
 ```
 
-1. Edit scripts of git hooks in different pods. The git hooks script needs to be placed in the `githooks` directory. You can also put the script in the `scripts` directory, then call in the script of git hooks .
+3. Edit scripts of git hooks in different pods. The git hooks script needs to be placed in the `githooks` directory. You can also put the script in the `scripts` directory, then call in the script of git hooks .
 
 ```shell
 // pre-commit, much use ${script_directory} to get correct directory.
@@ -45,5 +45,7 @@ ruby ${script_directory}/Test.rb
 ```
 
 [SyncGithooksDemo](https://github.com/dirtmelon/SyncGithooksDemo)
+
 [GithooksA](https://github.com/dirtmelon/githooksA.git)
+
 [GithooksB](https://github.com/dirtmelon/githooksB.git)
