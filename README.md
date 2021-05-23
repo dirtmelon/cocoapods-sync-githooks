@@ -43,6 +43,7 @@ end
 // pre-commit, much use ${script_directory} to get correct directory.
 ruby ${script_directory}/Test.rb
 ```
+Demo and git hooks pods:
 
 [SyncGithooksDemo](https://github.com/dirtmelon/SyncGithooksDemo)
 
